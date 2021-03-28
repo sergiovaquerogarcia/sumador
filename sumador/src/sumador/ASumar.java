@@ -26,10 +26,14 @@ public class ASumar {
 	public String mostrar(String num) {
 		String aux = num;
 		
+		if (aux.charAt(0) == '-')
+			return null;
 		if (aux.length() == 1) {
 			return (aux + " = " + aux);
 		}
-		else return null;
+		else return (aux + " = " + aux);
+		
+		
 	}
 
 }

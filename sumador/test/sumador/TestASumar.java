@@ -21,5 +21,15 @@ public class TestASumar {
 	     String resultado = numero.mostrar("4");
 	     assertEquals("4 = 4",resultado );
 	}
+	
+	/**
+	 *  TEST para comprobar si el número es negativo
+	 */
+	@Test
+	public void testEsNegativo() {
+		 ASumar numero = new ASumar("-40");
+	     String resultado = numero.mostrar("-40");
+	     assertNull(resultado);
+	}
 
 }
