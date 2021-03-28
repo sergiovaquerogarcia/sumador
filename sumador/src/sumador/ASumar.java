@@ -28,7 +28,7 @@ public class ASumar {
 		int sumTotal = 0;
 				
 		if (aux.charAt(0) == '-')
-			return null;
+			return ("Negativo. Siempre Negativo");
 		if (aux.length() == 1) {
 			return (aux + " = " + aux);
 		}
@@ -36,7 +36,7 @@ public class ASumar {
 		sumTotal = total (num);
 		resultado = presentacion(aux, sumTotal);
 		
-		return numero + " = " + resultado;
+		return (numero + " = " + resultado);
 		
 	}
 	
