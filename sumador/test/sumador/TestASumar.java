@@ -32,4 +32,15 @@ public class TestASumar {
 	     assertNull(resultado);
 	}
 
+	/**
+	 * Test para un número de más de 1 dígito
+	 * 
+	 */
+	@Test 
+	public void testMasDeUnDigito() {
+		 ASumar sumi = new ASumar("2450");
+	     String resultado = sumi.mostrar("2450");
+	     assertEquals("2450 = 2+4+5+0=11",resultado );
+		
+	}
 }
